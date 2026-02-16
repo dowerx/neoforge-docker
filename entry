@@ -2,4 +2,4 @@
 
 cp -r /minecraft/libraries /data/
 
-exec java ${JAVA_FLAGS} -jar @libraries/net/neoforged/neoforge/${NEOFORGE_VERSION}/unix_args.txt $@
+exec java ${JAVA_FLAGS} @libraries/net/neoforged/neoforge/${NEOFORGE_VERSION}/unix_args.txt $@
