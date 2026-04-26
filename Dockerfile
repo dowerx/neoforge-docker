@@ -13,13 +13,13 @@ ARG GID=1001
 ARG USERNAME=minecraft
 
 RUN \
-  addgroup \
+  groupadd \
     -g "${GID}" \
     "${USERNAME}" && \
-  adduser \
-    -D -H \
+  useradd \
+    -M \
     -u "${UID}" \
-    -G "${USERNAME}" \
+    -g "${USERNAME}" \
     "${USERNAME}" && \
   mkdir /data && \
   chown \
