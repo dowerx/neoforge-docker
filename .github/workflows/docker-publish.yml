@@ -34,4 +34,4 @@ jobs:
           tags: ghcr.io/dowerx/neoforge:${{ env.TAG_NAME }}
           build-args: |
             NEOFORGE_VERSION=${{ env.TAG_NAME }}
-            TEMURIN_TAG=25-jre-alpine-3.23
+            TEMURIN_TAG=25-jre-noble
